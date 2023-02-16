@@ -42,6 +42,5 @@ public class DataControllerTests {
 
         assertTrue(currencies.isJsonArray());
         assertEquals(20, currencies.getAsJsonArray().size());
-        
     }
 }
