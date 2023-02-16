@@ -32,7 +32,6 @@ jobs:
         reporter: java-junit
         fail-on-error: true
     - name: Coverage
-      id: jacoco
       uses: 'actions/upload-artifact@v2'
       with:
         name: jacoco-report
