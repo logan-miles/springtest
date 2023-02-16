@@ -36,6 +36,7 @@ jobs:
       with:
         name: jacoco-report
         path: ${{ github.workspace }}/data/target/site/jacoco/jacoco.xml
+        fail-on-error: false
     - name: Add coverage to PR
       id: jacoco
       uses: madrapps/jacoco-report@v1.2
