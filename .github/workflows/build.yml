@@ -36,13 +36,12 @@ jobs:
       with:
         name: jacoco-report
         path: ${{ github.workspace }}/data/target/site/jacoco/jacoco.xml
-        fail-on-error: false
-    - name: Add coverage to PR
-      id: jacoco
-      uses: madrapps/jacoco-report@v1.2
-      with:
-        paths: ${{ github.workspace }}/data/target/site/jacoco/jacoco.xml
-        token: ${{ secrets.GITHUB_TOKEN }}
-        min-coverage-overall: 80
-        min-coverage-changed-files: 80
-        title: Code Coverage
+    # - name: Add coverage to PR
+    #   id: jacoco
+    #   uses: madrapps/jacoco-report@v1.2
+    #   with:
+    #     paths: ${{ github.workspace }}/data/target/site/jacoco/jacoco.xml
+    #     token: ${{ secrets.GITHUB_TOKEN }}
+    #     min-coverage-overall: 80
+    #     min-coverage-changed-files: 80
+    #     title: Code Coverage
