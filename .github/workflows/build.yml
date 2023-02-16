@@ -16,9 +16,9 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Build
-      run: mvn --batch-mode -DskipTests data/pom.xml package
+      run: mvn --batch-mode -DskipTests -f data/pom.xml package
     - name: Test
-      run: mvn --batch-mode -Dmaven.test.failure.ignore=true data/pom.xml test
+      run: mvn --batch-mode -Dmaven.test.failure.ignore=true -f data/pom.xml test
     - name: Report
       uses: dorny/test-reporter@v1
       if: always()
