@@ -4,6 +4,10 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch: null
+permissions:
+  id-token: write
+  contents: read
+  checks: write
 jobs:
   build:
     runs-on: ubuntu-latest
