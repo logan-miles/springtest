@@ -25,7 +25,7 @@ public class DataControllerTests {
 
     @Test
     void testVersionShouldBe1_0_0() {
-        assertEquals("The actual version is 1.0.0", dc.version());
+        assertEquals("The actual version is 1.0.1", dc.version());
     }
 
     @Test
