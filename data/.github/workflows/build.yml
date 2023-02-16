@@ -1,4 +1,3 @@
----
 name: CI/CD Pipeline
 run-name: ${{ github.actor }} is testing a change
 on:
